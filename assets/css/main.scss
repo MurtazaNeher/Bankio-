@@ -1,4 +1,6 @@
 @import 'roots';
+@import 'navbar';
+
 
 * {
     margin: 0;
@@ -107,51 +109,69 @@ li {
     padding: 40px !important;
 }
 
+.white {
+    color: $white !important;
+}
+
+.orange {
+    color: $orange !important;
+}
 
 .main-btn {
     color: $white;
     font-size: 16px;
     padding: 15px 25px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 5px;
     font-weight: 600;
     transition: all 0.3s;
     outline: none;
     border: none;
     max-width: max-content;
     background-color: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+
+    &.round {
+        border-radius: 50px;
+    }
 }
 
 .main-btn:hover {
     position: relative;
-    background-color: $orange;
+    transform: translateY(-2px) !important;
     color: $white;
-    transform: translateY(-10px) !important;
-}
-
-.para-h {
-    margin-bottom: 1rem;
-    color: $gray;
-    font-size: 18px;
-    font-weight: 400;
 }
 
 .para {
-    margin-bottom: 1rem;
-    color: $gray;
-    font-size: 16px;
+    color: $light;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    margin-bottom: 2em;
+
+    &.white {
+        color: $white !important;
+    }
 }
 
 .title {
-    color: $dark;
     font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    color: $blue;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: block;
+    text-transform: uppercase;
 }
 
 .sec {
     padding-top: 60px;
     padding-bottom: 60px;
+    overflow: hidden;
 }
 
 .semi-bold {
@@ -162,15 +182,331 @@ li {
     margin-bottom: 1rem;
 
     h3 {
-        color: $dark;
-        font-size: 36px;
-        display: block;
-        font-weight: 800
+        color: $black;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -0.03em;
     }
-
-    ;
 
     &-center {
         text-align: center;
+    }
+}
+
+// Hero sec
+.hero-sec {
+
+    position: relative;
+    background: url(/assets/images/hero\ bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     z-index: -1;
+    //     background: url(/assets/images/hero\ bg.png);
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     background-position: center center;
+    // }
+
+    .ovr {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(50%)
+    }
+
+    .l-part {
+
+        .para {
+            width: 80%;
+            margin-bottom: 2em;
+            font-family: Manrope;
+            font-family: Manrope;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+        }
+
+        .d-flex {
+            gap: 100px;
+        }
+
+        .vid-btn {
+            font-family: Manrope;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 30px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: $white;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .sec-head {
+            h3 {
+                font-size: 60px;
+                font-weight: 800;
+                line-height: 80px;
+                letter-spacing: -0.03em;
+            }
+        }
+    }
+
+    .r-part {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Brands Sec
+.brand-sec {
+    .title {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $black;
+    }
+
+    .brand-list {
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+
+        li {
+            padding: 0;
+
+            img {
+                width: 130px;
+            }
+        }
+    }
+}
+
+// Feature Sec
+.fe-sec {
+    background: url(/assets/images/fe-bg.png);
+    background-position: center center;
+    background-size: cover;
+
+    .l-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Why sec
+.why-sec {
+    .why-con-wrapper {
+        background: #F3F7FA;
+        padding: 60px;
+        border-radius: 15px;
+        position: relative;
+
+        .ovr {
+            position: absolute;
+            top: 0;
+            left: 50px;
+            transform: translateY(-40%);
+        }
+
+        .w-card {
+            display: flex;
+            gap: 25px;
+            background-color: $white;
+            padding: 40px 25px;
+            border-radius: 15px;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.089);
+
+            .title {
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 33px;
+                letter-spacing: 0em;
+                color: $black;
+            }
+
+            img {
+                width: 58px;
+            }
+
+            .para {
+                margin: 0;
+                line-height: 30px;
+                letter-spacing: -0.02em;
+
+            }
+        }
+    }
+
+
+}
+
+.offwhite-bg {
+    background-color: #F7F7FD;
+}
+
+// Mailsec
+.mail-sec {
+    background-color: #3734A9;
+
+    .l-part {
+
+        .para {
+            width: 80%;
+        }
+    }
+
+    .r-part {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+
+        input {
+            outline: none;
+            border: none;
+            background: #F2F3F4;
+            display: block;
+            padding: 10px;
+            width: 300px;
+            opacity: 0.2;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: left;
+            color: #BBB5E0;
+        }
+
+        .submit-btn {
+            width: 300px;
+            background-color: #FF7F5C;
+            color: $white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            outline: none;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 30px;
+            letter-spacing: 0em;
+            transition: all 0.3s;
+
+            &:hover {
+                box-shadow: 4px 5px 30px rgba(0, 0, 0, 0.25);
+                transform: translateY(-3px);
+            }
+        }
+
+    }
+}
+
+// Footer
+.footer-sec {
+    background: #1B1C31;
+    overflow: hidden;
+
+    .foot-det {
+        padding: 7em 0;
+
+        .l-part {
+
+            .title {
+                margin-bottom: 1.5em;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .para {
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0em;
+                opacity: 0.4;
+                width: 80%;
+                font-size: 16px;
+            }
+        }
+
+        .footer-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 0;
+            li{
+                padding: 0;
+            }
+            .title {
+                margin-bottom: 1em;
+                font-size: 20px;
+                color: $white;
+                font-weight: 700;
+            }
+
+            .links {
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: $white;
+                    transition: all 0.3s;
+
+                    &:hover{
+                        font-style: italic;
+                        color: #FF7F5C;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    .copy{
+        border-top:1px solid #404444;
+        padding: 30px 0;
+
+        h3{
+            font-size: 15px;
+            line-height: 26px;
+            font-weight: 400;
+            color: $white;
+            margin: 0;
+            padding: 0;
+
+            &.semi{
+                font-weight: 700;
+            }
+        }
     }
 }
