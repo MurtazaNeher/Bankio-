@@ -1,0 +1,176 @@
+@import 'roots';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $p-font;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.mt-60 {
+    margin-top: 60px !important;
+}
+
+.mt-80 {
+    margin-top: 80px !important;
+}
+
+.mt-100 {
+    margin-top: 100px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.mb-60 {
+    margin-bottom: 60px !important;
+}
+
+.mb-80 {
+    margin-bottom: 80px !important;
+}
+
+.mb-100 {
+    margin-bottom: 100px !important;
+}
+
+.pt-20 {
+    padding-top: 20px !important;
+}
+
+.pt-40 {
+    padding-top: 40px !important;
+}
+
+.pt-60 {
+    padding-top: 60px !important;
+}
+
+.pt-80 {
+    padding-top: 80px !important;
+}
+
+.pt-100 {
+    padding-top: 100px !important;
+}
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.pb-40 {
+    padding-bottom: 40px !important;
+}
+
+.pb-60 {
+    padding-bottom: 60px !important;
+}
+
+.pb-80 {
+    padding-bottom: 80px !important;
+}
+
+.pb-100 {
+    padding-bottom: 100px !important;
+}
+
+.p-50 {
+    padding: 50px !important;
+}
+
+.p-20 {
+    padding: 20px !important;
+}
+
+.p-40 {
+    padding: 40px !important;
+}
+
+
+.main-btn {
+    color: $white;
+    font-size: 16px;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+    outline: none;
+    border: none;
+    max-width: max-content;
+    background-color: $blue;
+}
+
+.main-btn:hover {
+    position: relative;
+    background-color: $orange;
+    color: $white;
+    transform: translateY(-10px) !important;
+}
+
+.para-h {
+    margin-bottom: 1rem;
+    color: $gray;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.para {
+    margin-bottom: 1rem;
+    color: $gray;
+    font-size: 16px;
+}
+
+.title {
+    color: $dark;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.sec {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.sec-head {
+    margin-bottom: 1rem;
+
+    h3 {
+        color: $dark;
+        font-size: 36px;
+        display: block;
+        font-weight: 800
+    }
+
+    ;
+
+    &-center {
+        text-align: center;
+    }
+}
