@@ -183,7 +183,7 @@ li {
 
     h3 {
         color: $black;
-        font-size: 50px;
+        font-size: 53px;
         font-weight: 700;
         line-height: 56px;
         letter-spacing: -0.03em;
@@ -418,11 +418,12 @@ li {
             margin: 0;
             width: 70%;
         }
-        .main-btn{
-        background-color: $white;
-        color: $blue;
-        padding: 15px 50px;
-        font-weight: 700;
+
+        .main-btn {
+            background-color: $white;
+            color: $blue;
+            padding: 15px 50px;
+            font-weight: 700;
         }
 
     }
@@ -431,6 +432,123 @@ li {
 
 .offwhite-bg {
     background-color: #F7F7FD;
+}
+
+// Testimonial Sec
+.test-sec {
+
+    .sec-head {
+        h3 {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 48px;
+        }
+
+    }
+
+    .test-swiper-wrapper {
+        position: relative;
+        padding: 30px;
+
+        .ovr {
+            position: absolute;
+            top: 50px;
+            left: 30px;
+            transform: translateX(-50%);
+            z-index: 9;
+            width: 100px;
+        }
+    }
+
+    .testSwiper {
+
+
+        .swiper-slide {
+
+            .l-part {
+
+                img {
+                    width: 95%;
+
+                }
+            }
+
+            .r-part {
+                // padding: 0 30px;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 800;
+                    line-height: 30px;
+                    color: $black;
+                }
+
+                .para {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
+                    color: #757095;
+                }
+
+                .name {
+                    font-size: 16px;
+                    font-weight: 800;
+                    line-height: 30px;
+                    letter-spacing: -0.03em;
+                    margin-bottom: 0;
+                }
+
+                .pos {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
+
+                }
+            }
+
+        }
+
+        .test-slider-btns {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 30px;
+
+            .test-btns {
+                width: max-content;
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.2s;
+
+                &:hover {
+                    background: $blue;
+
+
+                    img {
+                        filter: none;
+                    }
+                }
+
+                img {
+                    width: 20px;
+                    filter: grayscale(1) invert(1);
+                    transition: all 0.3s;
+
+                }
+
+            }
+
+            .test-swiper-nxt {
+                transform: rotate(180deg)
+            }
+        }
+    }
 }
 
 // Mailsec
@@ -572,6 +690,162 @@ li {
 
             &.semi {
                 font-weight: 700;
+            }
+        }
+    }
+}
+
+// ABOUT PAGE
+#about-page {
+    .a-hero-sec {
+        position: relative;
+        background: url(/assets/images/about-hero-bg.png);
+        background-position: center center;
+        background-size: cover;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+
+        .ovr {
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+            transform: translateY(50%);
+        }
+
+    }
+
+    .a-sec-2 {
+        padding: 100px 0;
+
+        .d-flex {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .s2-card {
+            width: 28%;
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .img-wrapper {
+                width: 80px;
+                height: 80px;
+                background-color: $blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+
+                img {
+                    width: 30px;
+                }
+            }
+
+            .card-title {
+                font-size: 26px;
+                font-weight: 600;
+                line-height: 36px;
+                letter-spacing: 0em;
+            }
+
+            .card-text {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+                letter-spacing: 0em;
+
+                .card-link {
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    .how-work-sec {
+        position: relative;
+        padding: 80px 0 100px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: calc(100% - 300px);
+            width: 100%;
+            background: url(/assets/images/how-it-work-bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+
+        .sec-head {
+            margin-bottom: 30px;
+        }
+
+        .para {
+            width: 80%;
+            margin: auto;
+        }
+
+        .card-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap : wrap;
+            align-items: center;
+            margin: 50px 0;
+            gap: 20px;
+
+            .hw-card {
+                width: 250px;
+                height: 250px;
+                background-color: $white;
+                border: 2px dashed $blue;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                flex-direction: column;
+                border-radius: 24px;
+                margin: auto;
+
+                .card-title {
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 31px;
+                    letter-spacing: -0.03em;
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+    .foot-banner{
+        position: relative;
+        padding: 100px 0;
+        margin: 100px 0;
+        
+        .container{
+            border-radius: 25px;
+            background: url(/assets/images/gradient-bg.png);
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        .r-part{
+
+            img{
+                position: absolute;
+                top: 0;
+                height: 100%;
             }
         }
     }
