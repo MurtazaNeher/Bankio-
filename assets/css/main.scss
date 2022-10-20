@@ -1025,12 +1025,13 @@ li {
                 color: $white;
             }
 
-            .icon-list-wrapper{
+            .icon-list-wrapper {
                 display: flex;
                 gap: 20px;
                 margin-bottom: 30px;
-                
-                .icon-wrapper{
+                align-items: center;
+
+                .icon-wrapper {
                     background: $white;
                     height: 50px;
                     width: 50px;
@@ -1038,6 +1039,35 @@ li {
                     justify-content: center;
                     align-items: center;
                     border-radius: 15px;
+                }
+                .text-wrapper{
+                    a{
+                        color: $white;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .r-part {
+
+            .input-wr {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    letter-spacing: -0.02em;
+                }
+
+                input ,textarea{
+                    display: block;
+                    padding: 0.5em 1em;
+                    border-radius: 5px;
+                    outline: none;
+                    border: 1px solid #333;
                 }
             }
         }
